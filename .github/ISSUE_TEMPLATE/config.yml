@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: How to install the tools
+    url: https://federastro.com/#/scripts
+    about: Add the FederAstro repository to PixInsight once and it installs and updates everything.
+  - name: Security problem
+    url: https://github.com/afederastro/pixinsight-tools/blob/main/SECURITY.md
+    about: Please report security problems privately by email.
