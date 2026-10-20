@@ -1,0 +1,28 @@
+name: Feature request
+description: An idea for one of the FederAstro tools.
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Tool
+      options:
+        - Palette Lab
+        - Mask Lab
+        - Finderscope
+        - Acquisition Card
+        - A new tool
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to do?
+      description: The task or problem, in your own words. How do you do it today?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: How you picture it working. Mockups and screenshots welcome.
