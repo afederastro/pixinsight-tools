@@ -13,8 +13,8 @@ updated through PixInsight's own update system from the signed FederAstro reposi
 | **Finderscope** | Module | 0.6.2 | Windows (64-bit) | Process ▸ FederAstro ▸ Finderscope | [docs](docs/Finderscope.md) |
 | **Acquisition Card** | Script | 0.1 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Acquisition Card | [docs](docs/AcquisitionCard.md) |
 
-- **Palette Lab**: previews every narrowband palette side by side from your Hα, OIII and SII masters, finishes the color
-  and builds the one you like at full resolution.
+- **Palette Lab**: 19 built-in narrowband palettes side by side from your Hα, OIII and SII masters, plus palettes you
+  design yourself; finishes the color and builds the one you like at full resolution.
 - **Mask Lab**: paint, select and refine masks at full resolution in a window of their own, then apply them to your image.
 - **Finderscope**: a dockable panel of icon tiles for every process and script you use, arranged on your own pages,
   plus saved process settings you can apply with one click.
