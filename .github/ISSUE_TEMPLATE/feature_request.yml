@@ -11,6 +11,7 @@ body:
         - Mask Lab
         - Finderscope
         - Acquisition Card
+        - Tilt Doctor
         - A new tool
     validations:
       required: true
