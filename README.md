@@ -12,6 +12,7 @@ updated through PixInsight's own update system from the signed FederAstro reposi
 | **Mask Lab** | Module | 0.1.0 | Windows (64-bit) | Process ▸ FederAstro ▸ Mask Lab | [docs](docs/MaskLab.md) |
 | **Finderscope** | Module | 0.6.2 | Windows (64-bit) | Process ▸ FederAstro ▸ Finderscope | [docs](docs/Finderscope.md) |
 | **Acquisition Card** | Script | 0.1 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Acquisition Card | [docs](docs/AcquisitionCard.md) |
+| **Tilt Doctor** | Script | 0.1 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Tilt Doctor | [docs](docs/TiltDoctor.md) |
 
 - **Palette Lab**: 19 built-in narrowband palettes side by side from your Hα, OIII and SII masters, plus palettes you
   design yourself; finishes the color and builds the one you like at full resolution.
@@ -20,8 +21,10 @@ updated through PixInsight's own update system from the signed FederAstro reposi
   plus saved process settings you can apply with one click.
 - **Acquisition Card**: builds AstroBin's acquisition CSV and a session summary from the headers of your subs and
   calibration masters.
+- **Tilt Doctor**: finds sensor tilt from the size of the stars across your subs: where the sharpest spot sits, how
+  much the corners differ, and how that changes between sessions (for example before and after adjusting the tilt).
 
-More about each, with screenshots: [federastro.com/#/scripts](https://federastro.com/#/scripts).
+More about each, with screenshots: [federastro.com/scripts](https://federastro.com/scripts/).
 
 ## Install
 
@@ -50,7 +53,7 @@ For a security problem, please don't open a public issue: see [SECURITY.md](SECU
 - **Palette Lab** is derived in part from Perfect Palette Picker 1.3 by Franklin Marek
   ([SetiAstro](https://www.setiastro.com/)) and is distributed under the same license,
   [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): free, not for commercial use.
-- **Mask Lab**, **Finderscope** and **Acquisition Card** are free to use. Mask Lab and Finderscope are based on software
+- **Mask Lab**, **Finderscope**, **Acquisition Card** and **Tilt Doctor** are free to use. Mask Lab and Finderscope are based on software
   from the PixInsight project, developed by Pleiades Astrophoto and its contributors (https://pixinsight.com/); Mask Lab
   also contains code ported from [PhotoCraft](https://github.com/storytold/photocraft) under its MIT license (the
   notice is in its documentation).
