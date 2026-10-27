@@ -1,7 +1,7 @@
 # Palette Lab
 
 A narrowband palette explorer for PixInsight.
-Version 0.7 · Script ▸ FederAstro ▸ Palette Lab · Windows, macOS and Linux · [CC BY-NC 4.0](#license-and-credits)
+Version 0.7.1 · Script ▸ FederAstro ▸ Palette Lab · Windows, macOS and Linux · [CC BY-NC 4.0](#license-and-credits)
 
 ## What it does
 

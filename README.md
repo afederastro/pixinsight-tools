@@ -1,7 +1,7 @@
 # FederAstro PixInsight tools
 
 Scripts and modules for [PixInsight](https://pixinsight.com/) by afeder ([FederAstro](https://federastro.com/)),
-a PixInsight Certified Developer (identifier **afederastro**).
+a Certified PixInsight Developer (identifier **afederastro**).
 
 This repository holds the **documentation** and the **issue tracker**. The tools themselves are installed and
 updated through PixInsight's own update system from the signed FederAstro repository, so there are no downloads here.
