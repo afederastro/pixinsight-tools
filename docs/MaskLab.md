@@ -1,7 +1,7 @@
 # Mask Lab
 
 Paint, select and refine masks at full resolution, then apply them to your image.
-Version 0.1.0 · Process ▸ FederAstro ▸ Mask Lab · Windows (64-bit) · Free
+Version 0.1.1 · Process ▸ FederAstro ▸ Mask Lab · Windows (64-bit) · Free
 
 ![Mask Lab's window](https://federastro.com/images/MaskLab1.webp)
 

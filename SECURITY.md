@@ -7,5 +7,5 @@ saved setting or downloaded package run code it shouldn't), please report it pri
 
 You'll get an answer as soon as possible, and a fix will ship through the signed FederAstro update repository.
 
-All FederAstro scripts and modules are code-signed with the PixInsight Certified Developer identity **afederastro**,
+All FederAstro scripts and modules are code-signed with the Certified PixInsight Developer identity **afederastro**,
 and are distributed only through `https://federastro.com/pixinsight/`. A copy from anywhere else is not an official build.

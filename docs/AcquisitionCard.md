@@ -1,7 +1,7 @@
 # Acquisition Card
 
 AstroBin acquisition details from your headers.
-Version 0.1 · Script ▸ FederAstro ▸ Acquisition Card · Windows, macOS and Linux · Free
+Version 0.1.1 · Script ▸ FederAstro ▸ Acquisition Card · Windows, macOS and Linux · Free
 
 ## What it does
 

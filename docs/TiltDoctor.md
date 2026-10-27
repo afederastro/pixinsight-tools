@@ -1,7 +1,7 @@
 # Tilt Doctor
 
 Sensor tilt from the stars in your subs.
-Version 0.1 · Script ▸ FederAstro ▸ Tilt Doctor · Windows, macOS and Linux · Free
+Version 0.1.1 · Script ▸ FederAstro ▸ Tilt Doctor · Windows, macOS and Linux · Free
 
 ## What it does
 

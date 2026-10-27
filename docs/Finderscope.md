@@ -1,7 +1,7 @@
 # Finderscope
 
 A panel for launching PixInsight processes, scripts and your own saved process settings. Formerly *afeder Launcher*.
-Version 0.6.2 · Process ▸ FederAstro ▸ Finderscope · Windows (64-bit) · Free
+Version 0.6.3 · Process ▸ FederAstro ▸ Finderscope · Windows (64-bit) · Free
 
 ## What it does
 
