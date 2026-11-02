@@ -1,7 +1,7 @@
 # Mask Lab
 
 Paint, select and refine masks at full resolution, then apply them to your image.
-Version 0.1.1 · Process ▸ FederAstro ▸ Mask Lab · Windows (64-bit) · Free
+Version 0.1.2 · Process ▸ FederAstro ▸ Mask Lab · Windows (64-bit) and macOS (Apple silicon) · Free
 
 ![Mask Lab's window](https://federastro.com/images/MaskLab1.webp)
 
@@ -79,8 +79,9 @@ If Mask Lab's window (or any process window) looks see-through, turn off PixInsi
 - Mask Lab writes no files. Star masks are made with PixInsight's StarMask process in temporary image windows that are
   closed straight away.
 - No network connections, no external programs, no scripts. Images change only when you apply.
-- The module is `bin/MaskLab-pxm.dll`; its documentation is in `doc/tools/MaskLab/`. Uninstalling the module removes it
-  completely.
+- The module is `bin/MaskLab-pxm.dll` (Windows) or `bin/MaskLab-pxm.dylib` (macOS, Apple silicon); its documentation is
+  in `doc/tools/MaskLab/`. Uninstalling the module removes it completely.
+- On macOS, use the Cmd key wherever Mask Lab says Ctrl (Cmd+Z, Cmd+Y, Cmd+drag).
 
 ## Acknowledgments
 

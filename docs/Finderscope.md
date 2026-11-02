@@ -1,7 +1,7 @@
 # Finderscope
 
 A panel for launching PixInsight processes, scripts and your own saved process settings. Formerly *afeder Launcher*.
-Version 0.6.3 · Process ▸ FederAstro ▸ Finderscope · Windows (64-bit) · Free
+Version 0.6.4 · Process ▸ FederAstro ▸ Finderscope · Windows (64-bit) and macOS (Apple silicon) · Free
 
 ## What it does
 
@@ -38,8 +38,8 @@ Parameters that hold binary data cannot be saved this way and are left at their 
 | What | Where |
 |---|---|
 | Your pages, pins, recent items, tile size, theme and other preferences | PixInsight's settings, through the standard PCL settings interface (module `Finderscope`) |
-| Saved settings (one file per tile, plain JSON data) | Windows: `%APPDATA%\Finderscope\saved-settings\` |
-| Temporary files while reading process icons or applying saved settings (`finderscope-icons.txt`, `finderscope-settings.json`) | The system temporary folder (on Windows `%TEMP%`); overwritten each time |
+| Saved settings (one file per tile, plain JSON data) | Windows: `%APPDATA%\Finderscope\saved-settings\`; macOS: `~/.config/Finderscope/saved-settings/` |
+| Temporary files while reading process icons or applying saved settings (`finderscope-icons.txt`, `finderscope-settings.json`) | The system temporary folder (Windows: `%TEMP%`; macOS: `$TMPDIR`, your per-user temporary folder); overwritten each time |
 | Layout exports | Only where you choose in the save dialog |
 
 - **Network:** the launcher makes no network connections and collects no data of any kind.
@@ -51,11 +51,15 @@ Parameters that hold binary data cannot be saved this way and are left at their 
 ## Install and remove
 
 Install it from the FederAstro repository (see the [README](../README.md#install)). The module is
-`bin/Finderscope-pxm.dll`; the helper script is `src/scripts/AfederAstro/FinderscopeHelper.js`. To remove everything
-the launcher stored outside PixInsight, delete the `Finderscope` folder listed above.
+`bin/Finderscope-pxm.dll` (Windows) or `bin/Finderscope-pxm.dylib` (macOS, Apple silicon); the helper script is
+`src/scripts/AfederAstro/FinderscopeHelper.js`. To remove everything the launcher stored outside PixInsight, delete the
+`Finderscope` folder listed above.
+
+On macOS, Ctrl in the launcher's help and tooltips means the Cmd key (Cmd+click, Cmd + mouse wheel).
 
 ## Latest changes
 
+- **0.6.4**: first macOS (Apple silicon) release; the help names the saved-settings folder for each system.
 - **0.6.2**: new icon; script tiles show icons for scripts that keep theirs in PixInsight's icon folder.
 - **0.6.0**: renamed from afeder Launcher to Finderscope, now under Process ▸ FederAstro, documentation page in
   PixInsight's Documentation Browser, saved settings stored as plain data and applied by a signed helper script.
