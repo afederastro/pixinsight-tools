@@ -9,8 +9,8 @@ updated through PixInsight's own update system from the signed FederAstro reposi
 | Tool | Type | Version | Platforms | Find it in PixInsight | Docs |
 |---|---|---|---|---|---|
 | **Palette Lab** | Script | 0.7 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Palette Lab | [docs](docs/PaletteLab.md) |
-| **Mask Lab** | Module | 0.1.0 | Windows (64-bit) | Process ▸ FederAstro ▸ Mask Lab | [docs](docs/MaskLab.md) |
-| **Finderscope** | Module | 0.6.2 | Windows (64-bit) | Process ▸ FederAstro ▸ Finderscope | [docs](docs/Finderscope.md) |
+| **Mask Lab** | Module | 0.1.2 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Mask Lab | [docs](docs/MaskLab.md) |
+| **Finderscope** | Module | 0.6.4 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Finderscope | [docs](docs/Finderscope.md) |
 | **Acquisition Card** | Script | 0.1 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Acquisition Card | [docs](docs/AcquisitionCard.md) |
 | **Tilt Doctor** | Script | 0.1 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Tilt Doctor | [docs](docs/TiltDoctor.md) |
 
