@@ -8,7 +8,7 @@ updated through PixInsight's own update system from the signed FederAstro reposi
 
 | Tool | Type | Version | Platforms | Find it in PixInsight | Docs |
 |---|---|---|---|---|---|
-| **Palette Lab** | Script | 0.7 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Palette Lab | [docs](docs/PaletteLab.md) |
+| **Palette Lab** | Script | 0.7.2 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Palette Lab | [docs](docs/PaletteLab.md) |
 | **Mask Lab** | Module | 0.1.2 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Mask Lab | [docs](docs/MaskLab.md) |
 | **Touch Stretch** | Module | 0.1.0 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Touch Stretch | [docs](docs/TouchStretch.md) |
 | **Finderscope** | Module | 0.6.4 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Finderscope | [docs](docs/Finderscope.md) |
