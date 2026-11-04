@@ -12,8 +12,8 @@ updated through PixInsight's own update system from the signed FederAstro reposi
 | **Mask Lab** | Module | 0.1.3 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Mask Lab | [docs](docs/MaskLab.md) |
 | **Touch Stretch** | Module | 0.1.1 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Touch Stretch | [docs](docs/TouchStretch.md) |
 | **Finderscope** | Module | 0.6.5 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Finderscope | [docs](docs/Finderscope.md) |
-| **Acquisition Card** | Script | 0.1.2 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Acquisition Card | [docs](docs/AcquisitionCard.md) |
-| **Tilt Doctor** | Script | 0.1.2 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Tilt Doctor | [docs](docs/TiltDoctor.md) |
+| **Acquisition Card** | Script | 0.1.3 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Acquisition Card | [docs](docs/AcquisitionCard.md) |
+| **Tilt Doctor** | Script | 0.1.3 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Tilt Doctor | [docs](docs/TiltDoctor.md) |
 
 - **Palette Lab**: 19 built-in narrowband palettes side by side from your Hα, OIII and SII masters, plus palettes you
   design yourself; finishes the color and builds the one you like at full resolution.
@@ -56,7 +56,10 @@ For a security problem, please don't open a public issue: see [SECURITY.md](SECU
 - **Palette Lab** is derived in part from Perfect Palette Picker 1.3 by Franklin Marek
   ([SetiAstro](https://www.setiastro.com/)) and is distributed under the same license,
   [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): free, not for commercial use.
-- **Mask Lab**, **Touch Stretch**, **Finderscope**, **Acquisition Card** and **Tilt Doctor** are free to use. Mask Lab,
+- **Acquisition Card** and **Tilt Doctor** are freeware: free for any use, including commercial imaging work. Unchanged
+  copies may be shared free of charge, but they may not be sold, and changed copies may not be distributed (full text
+  in each tool's doc).
+- **Mask Lab**, **Touch Stretch** and **Finderscope** are free to use. Mask Lab,
   Touch Stretch and Finderscope are based on software
   from the PixInsight project, developed by Pleiades Astrophoto and its contributors (https://pixinsight.com/); Mask Lab
   also contains code ported from [PhotoCraft](https://github.com/storytold/photocraft) under its MIT license (the
