@@ -1,7 +1,7 @@
 # Touch Stretch
 
 Stretch an image by touching it: click a brightness and drag.
-Version 0.1.0 · Process ▸ FederAstro ▸ Touch Stretch · Windows (64-bit) and macOS (Apple silicon) · Free
+Version 0.1.1 · Process ▸ FederAstro ▸ Touch Stretch · Windows (64-bit) and macOS (Apple silicon) · Free
 
 ![Touch Stretch's split view](https://federastro.com/images/TouchStretch1.webp)
 
