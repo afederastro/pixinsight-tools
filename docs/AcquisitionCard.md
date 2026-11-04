@@ -1,7 +1,7 @@
 # Acquisition Card
 
 AstroBin acquisition details from your headers.
-Version 0.1.2 · Script ▸ FederAstro ▸ Acquisition Card · Windows, macOS and Linux · Free
+Version 0.1.3 · Script ▸ FederAstro ▸ Acquisition Card · Windows, macOS and Linux · Free
 
 ## What it does
 
@@ -52,6 +52,14 @@ Linux. It also uses PixInsight's own SubframeSelector process.
 PixInsight 1.9.5 or later. Install and update it from the FederAstro repository (see the [README](../README.md#install)).
 To remove it, delete the `src/scripts/AfederAstro/AcquisitionCard` folder, then use
 **Script ▸ Feature Scripts ▸ Regenerate**.
+
+## License
+
+Copyright © 2026 afeder (FederAstro). Acquisition Card is freeware: you may use it free of charge for any purpose,
+including commercial imaging work, change it for your own use, and share unchanged copies free of charge. You may
+not sell it, include it in anything sold, or distribute changed copies. It is provided as is, without warranty of
+any kind, and the author is not liable for any damage arising from its use. The official copy is in the FederAstro
+repository, https://federastro.com/pixinsight/.
 
 ## Credits
 
