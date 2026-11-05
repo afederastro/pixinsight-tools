@@ -1,7 +1,7 @@
 # Palette Lab
 
 A narrowband palette explorer for PixInsight.
-Version 0.7.3 · Script ▸ FederAstro ▸ Palette Lab · Windows, macOS and Linux · [CC BY-NC 4.0](#license-and-credits)
+Version 0.7.4 · Script ▸ FederAstro ▸ Palette Lab · Windows, macOS and Linux · [CC BY-NC 4.0](#license-and-credits)
 
 ## What it does
 
@@ -18,7 +18,7 @@ The sidebar has four tabs:
 
 | Tab | What you do there |
 |---|---|
-| **Source** | Choose the Hα, OIII and SII images (auto-detect reads the FITS `FILTER` keyword, then image names), say whether the data is linear, and optionally render thumbnails from a PixInsight preview region. |
+| **Source** | Choose the Hα, OIII and SII images (auto-detect reads the FITS `FILTER` keyword, then image names, and skips star-only images such as `Ha_stars`), say whether the data is linear, and optionally render thumbnails from a PixInsight preview region. |
 | **Adjust** | Channel weights (or AUTO), channel normalization, stretch (median target or Auto STF) and the black-point clip. |
 | **Color** | Green removal, saturation, hue shift, selective hue, neutral background, background protection, contrast curve, Hα as luminance and glow. |
 | **Output** | Build options, star recombination, NB Blend (blending a colored narrowband channel into a palette image), saving builds to disk, and replace-or-duplicate for rebuilds. |
