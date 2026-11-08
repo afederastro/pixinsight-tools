@@ -1,7 +1,7 @@
 # Palette Lab
 
 A narrowband palette explorer for PixInsight.
-Version 0.7.4 · Script ▸ FederAstro ▸ Palette Lab · Windows, macOS and Linux · [CC BY-NC 4.0](#license-and-credits)
+Version 0.7.5 · Script ▸ FederAstro ▸ Palette Lab · Windows, macOS and Linux · [CC BY-NC 4.0](#license-and-credits)
 
 ## What it does
 
@@ -9,8 +9,10 @@ Palette Lab takes your Hα, OIII and SII images (any two or all three) and shows
 palettes side by side, so you can compare looks before committing to one. Pick a palette, fine-tune it, and build it
 at full resolution as a new image.
 
-Built-in palettes: HOO, HOS, HSO, HSS, OHH, OHS, OSH, OSS, SHH, SHO, SOH, SOO, Realistic 1 and 2, Foraxx,
-Dynamic Inverse, Dreamsplease, Magma (SHO) and Magma (HOO), plus any custom palettes you make.
+Built-in palettes: HOO, HOS, HSO, HSS, OHH, OHS, OSH, OSS, SHH, SHO, SOH, SOO, Reef, Forge and Dune (line colours),
+Foraxx, Dreamsplease, Magma (SHO) and Magma (HOO), plus any custom palettes you make. Since 0.7.5, Dune, Reef and Forge
+replace Realistic1, Realistic2 and Dynamic Inverse; favorites and build history that name the old palettes use the new
+ones.
 
 ## Workflow
 
@@ -85,11 +87,10 @@ The full version history is on [federastro.com](https://federastro.com/#/scripts
 
 ## License and credits
 
-Palette Lab is derived in part from **Perfect Palette Picker** v1.3 by Franklin Marek
-([SetiAstro](https://www.setiastro.com/)), licensed under Creative Commons Attribution-NonCommercial 4.0 International
-([CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)). The original code and adapted palette algorithms
-remain attributed to their author. Palette Lab is distributed under the same license: it is free, and may not be used
-commercially without the rights holder's permission. The Magma and Dreamsplease formulas are community formulas;
-credit belongs to their authors.
+Palette Lab by afeder (FederAstro), https://federastro.com/. It is free and licensed under Creative Commons
+Attribution-NonCommercial 4.0 International ([CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)): it may
+not be used commercially without permission. The Foraxx, Magma and Dreamsplease formulas are community formulas; credit
+belongs to their authors.
 
-Interface, workflow and additional features by afeder (FederAstro), https://federastro.com/.
+Thanks to Franklin Marek ([SetiAstro](https://www.setiastro.com/)), whose **Perfect Palette Picker** inspired Palette
+Lab. Since version 0.7.5 Palette Lab includes no code or palettes from Perfect Palette Picker.
