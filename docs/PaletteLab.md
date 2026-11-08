@@ -1,7 +1,7 @@
 # Palette Lab
 
 A narrowband palette explorer for PixInsight.
-Version 0.7.5 · Script ▸ FederAstro ▸ Palette Lab · Windows, macOS and Linux · [CC BY-NC 4.0](#license-and-credits)
+Version 0.7.6 · Script ▸ FederAstro ▸ Palette Lab · Windows, macOS and Linux · [CC BY-NC 4.0](#license-and-credits)
 
 ## What it does
 
@@ -10,7 +10,7 @@ palettes side by side, so you can compare looks before committing to one. Pick a
 at full resolution as a new image.
 
 Built-in palettes: HOO, HOS, HSO, HSS, OHH, OHS, OSH, OSS, SHH, SHO, SOH, SOO, Reef, Forge and Dune (line colours),
-Foraxx, Dreamsplease, Magma (SHO) and Magma (HOO), plus any custom palettes you make. Since 0.7.5, Dune, Reef and Forge
+Mesa (amber-gold rims and a silvery OIII core, adapted to each target), Foraxx, Dreamsplease, Magma (SHO) and Magma (HOO), plus any custom palettes you make. Since 0.7.5, Dune, Reef and Forge
 replace Realistic1, Realistic2 and Dynamic Inverse; favorites and build history that name the old palettes use the new
 ones.
 
