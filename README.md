@@ -8,15 +8,16 @@ updated through PixInsight's own update system from the signed FederAstro reposi
 
 | Tool | Type | Version | Platforms | Find it in PixInsight | Docs |
 |---|---|---|---|---|---|
-| **Palette Lab** | Script | 0.7.3 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Palette Lab | [docs](docs/PaletteLab.md) |
+| **Palette Lab** | Module | 0.8.0 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Palette Lab | [docs](docs/PaletteLab.md) |
 | **Mask Lab** | Module | 0.1.3 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Mask Lab | [docs](docs/MaskLab.md) |
 | **Touch Stretch** | Module | 0.1.1 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Touch Stretch | [docs](docs/TouchStretch.md) |
 | **Finderscope** | Module | 0.6.5 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Finderscope | [docs](docs/Finderscope.md) |
 | **Acquisition Card** | Script | 0.1.3 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Acquisition Card | [docs](docs/AcquisitionCard.md) |
 | **Tilt Doctor** | Script | 0.1.3 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Tilt Doctor | [docs](docs/TiltDoctor.md) |
 
-- **Palette Lab**: 19 built-in narrowband palettes side by side from your Hα, OIII and SII masters, plus palettes you
-  design yourself; finishes the color and builds the one you like at full resolution.
+- **Palette Lab**: 20 built-in narrowband palettes side by side from your Hα, OIII and SII masters (or dual-band
+  one-shot colour masters), plus palettes you design yourself; finishes the color and builds the one you like at full
+  resolution. A module since 0.8.0 (it was a script before; updating replaces it, see its [docs](docs/PaletteLab.md#now-a-module-080)).
 - **Mask Lab**: paint, select and refine masks at full resolution in a window of their own, then apply them to your image.
 - **Touch Stretch**: stretch an image by touching it: click a brightness and drag up to bring it out or down to hold
   it back, in a window of its own with a live full-resolution preview.
@@ -53,16 +54,21 @@ For a security problem, please don't open a public issue: see [SECURITY.md](SECU
 
 ## Licenses
 
-- **Palette Lab** is derived in part from Perfect Palette Picker 1.3 by Franklin Marek
-  ([SetiAstro](https://www.setiastro.com/)) and is distributed under the same license,
-  [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): free, not for commercial use.
+- **Palette Lab** is free and licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): not for
+  commercial use. Thanks to Franklin Marek ([SetiAstro](https://www.setiastro.com/)), whose Perfect Palette Picker
+  inspired it.
 - **Acquisition Card** and **Tilt Doctor** are freeware: free for any use, including commercial imaging work. Unchanged
   copies may be shared free of charge, but they may not be sold, and changed copies may not be distributed (full text
   in each tool's doc).
-- **Mask Lab**, **Touch Stretch** and **Finderscope** are free to use. Mask Lab,
+- **Mask Lab**, **Touch Stretch** and **Finderscope** are free to use. Palette Lab, Mask Lab,
   Touch Stretch and Finderscope are based on software
   from the PixInsight project, developed by Pleiades Astrophoto and its contributors (https://pixinsight.com/); Mask Lab
   also contains code ported from [PhotoCraft](https://github.com/storytold/photocraft) under its MIT license (the
   notice is in its documentation).
+
+## Credits
+
+- **Palette Lab**'s Narrowband Blend follows Adam Block's technique for adding a narrowband channel to a color
+  image: the stretched channel is colored with one hue, its background is neutralized, and it is screen-blended in.
 
 The documentation in this repository is © afeder (FederAstro).
