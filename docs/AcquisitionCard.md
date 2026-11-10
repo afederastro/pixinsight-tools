@@ -1,7 +1,7 @@
 # Acquisition Card
 
 AstroBin acquisition details from your headers.
-Version 0.1.3 · Script ▸ FederAstro ▸ Acquisition Card · Windows, macOS and Linux · Free
+Version 0.2.0 · Script ▸ FederAstro ▸ Acquisition Card · Windows, macOS and Linux · Free
 
 ## What it does
 
@@ -10,7 +10,11 @@ Acquisition Card reads the FITS and XISF headers of your light frames and calibr
 - the **acquisition CSV** that AstroBin imports: one row per night, filter, exposure, binning and gain, with the number
   of subs, sensor temperature, dark, flat, flat-dark and bias counts, Bortle, SQM and mean FWHM;
 - a **summary** of total integration per filter, equipment and calibration for your image description, as plain text
-  or in AstroBin's BBCode.
+  or in AstroBin's BBCode;
+- a **card**: a picture of the capture to post next to your image, with the dates, your title and text, your
+  picture, a timeline of the nights, one bar per filter (one cell per sub), the total, and optionally FWHM, equipment
+  and calibration, on a plain background or a chart of the real constellations around your target. Saved as PNG or
+  JPEG.
 
 ## Workflow
 
@@ -21,6 +25,7 @@ Acquisition Card reads the FITS and XISF headers of your light frames and calibr
 | **Site & nights** | Bortle and mean SQM are added to every row when given. *Local night* puts a sub taken after midnight on the evening the night began (from the site longitude in the headers); *UTC date* uses `DATE-OBS` as it is. Sensor temperature is the measured `CCD-TEMP` or the cooler set point. |
 | **Sessions** | Untick a row to leave it out. Calibration is matched to each session by exposure (darks), filter (flats) and the nearest date. A dark that matches only your flats' exposure is treated as a flat-dark. *Measure FWHM* runs SubframeSelector on a sample of each session's subs (3, 5, 10 or all, spread across the night) and reports the mean in arcseconds; frames with too few stars are left out. |
 | **Output** | *Copy* puts the text on the clipboard; paste it into AstroBin (edit the image's acquisition details, then import CSV) or into your description. *Save* writes it to a file you choose. |
+| **Card** | *Card…* opens the card in a window of its own. Type a title (it starts as the `OBJECT` in your headers) and a few words of your own, pick your finished (stretched) picture from the open images, choose what to show (FWHM, nights, equipment, calibration) and a background. *Sky chart* centres the real constellation figures on your target, from the `RA`/`DEC` (or `OBJCTRA`/`OBJCTDEC`) in the headers, with the target behind your picture. The card counts the ticked sessions; to show only the subs in your final image, add your master lights with *+ Files* instead of the folder. *Edit equipment* lets you change the equipment lines (one *Label: value* per line), for example to name your telescope when the header holds the mount, or to add your filters; your lines are kept for your next cards until you click *From headers*. *Save PNG* writes the card (2000 pixels wide) to a file you choose; *Open in PixInsight* opens it as a new image. |
 
 > PixInsight scripts have no clipboard function of their own, so *Copy* hands the text to your system's clipboard tool
 > (see below). If that tool is missing, the text is selected instead and Ctrl+C copies it.
@@ -29,16 +34,18 @@ Acquisition Card reads the FITS and XISF headers of your light frames and calibr
 
 `IMAGETYP`, `DATE-OBS`, `FILTER`, `EXPOSURE`/`EXPTIME`, `XBINNING`, `GAIN`, `OFFSET`, `ISOSPEED`, `CCD-TEMP`,
 `SET-TEMP`, `AMBTEMP`, `SITELAT`/`SITELONG`, `OBJECT`, `INSTRUME`, `TELESCOP`, `FOCALLEN`, `XPIXSZ`, `GUIDECAM` and
-`CREATOR`/`SWCREATE`, plus the equivalent XISF properties and the processing history of masters. Site coordinates
+`CREATOR`/`SWCREATE`, `RA`/`DEC` or `OBJCTRA`/`OBJCTDEC` (the card's sky chart), plus the equivalent XISF properties and the processing history of masters. Site coordinates
 appear in the summary only if you tick *Include site coordinates*.
 
 ## Files, network and programs
 
 | What | Where |
 |---|---|
-| Your options (filter IDs, Bortle, SQM, date and temperature modes, FWHM sample, theme, last folder, unticked sessions) | PixInsight's settings, through the standard PJSR `Settings` interface (key `AFederAcquisitionCard`) |
+| Your options (filter IDs, Bortle, SQM, date and temperature modes, FWHM sample, theme, last folder, unticked sessions, the card's background, options and equipment lines) | PixInsight's settings, through the standard PJSR `Settings` interface (key `AFederAcquisitionCard`) |
 | Your image files | Read only; nothing is written to them |
-| Saved CSV or summary | Only where you choose in a save dialog |
+| Saved CSV, summary or card | Only where you choose in a save dialog |
+| Card sky chart | Reads the constellation figures and names that ship with PixInsight (`src/scripts/AnnotateImage/ConstellationLines.json` and `ConstellationLabels.json`); nothing is written there |
+| Card fonts | Inter and JetBrains Mono, which ship with PixInsight |
 | FWHM measurement | PixInsight's SubframeSelector process, with its own file cache |
 | Copy | A temporary text file in your system's temporary folder, deleted right after copying |
 | Installed files | `src/scripts/AfederAstro/AcquisitionCard/` (the script, its signature and its icon) and its page in `doc/scripts/` |
@@ -65,3 +72,6 @@ repository, https://federastro.com/pixinsight/.
 
 By afeder (FederAstro), https://federastro.com/. AstroBin is a service of its respective owner; this script only
 produces text in the format AstroBin's CSV import accepts and is not affiliated with AstroBin.
+
+The card's sky chart draws the constellation figures that are distributed with PixInsight's AnnotateImage script (by
+Andrés del Pozo and Juan Conejero), read from your PixInsight installation.

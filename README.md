@@ -12,7 +12,7 @@ updated through PixInsight's own update system from the signed FederAstro reposi
 | **Mask Lab** | Module | 0.1.3 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Mask Lab | [docs](docs/MaskLab.md) |
 | **Touch Stretch** | Module | 0.1.1 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Touch Stretch | [docs](docs/TouchStretch.md) |
 | **Finderscope** | Module | 0.6.5 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Finderscope | [docs](docs/Finderscope.md) |
-| **Acquisition Card** | Script | 0.1.3 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Acquisition Card | [docs](docs/AcquisitionCard.md) |
+| **Acquisition Card** | Script | 0.2.0 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Acquisition Card | [docs](docs/AcquisitionCard.md) |
 | **Tilt Doctor** | Script | 0.1.3 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Tilt Doctor | [docs](docs/TiltDoctor.md) |
 
 - **Palette Lab**: 20 built-in narrowband palettes side by side from your Hα, OIII and SII masters (or dual-band
@@ -24,7 +24,7 @@ updated through PixInsight's own update system from the signed FederAstro reposi
 - **Finderscope**: a dockable panel of icon tiles for every process and script you use, arranged on your own pages,
   plus saved process settings you can apply with one click.
 - **Acquisition Card**: builds AstroBin's acquisition CSV and a session summary from the headers of your subs and
-  calibration masters.
+  calibration masters, and a card: a picture of the capture to post next to your image.
 - **Tilt Doctor**: finds sensor tilt from the size of the stars across your subs: where the sharpest spot sits, how
   much the corners differ, and how that changes between sessions (for example before and after adjusting the tilt).
 
