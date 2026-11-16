@@ -1,7 +1,7 @@
 # Mask Lab
 
 Paint, select and refine masks at full resolution, then apply them to your image.
-Version 0.1.3 · Process ▸ FederAstro ▸ Mask Lab · Windows (64-bit) and macOS (Apple silicon) · Free
+Version 0.1.4 · Process ▸ FederAstro ▸ Mask Lab · Windows (64-bit) and macOS (Apple silicon) · Free
 
 ![Mask Lab's window](https://federastro.com/images/MaskLab1.webp)
 
@@ -89,8 +89,6 @@ This product is based on software from the PixInsight project, developed by Plei
 (https://pixinsight.com/). It is built with the PixInsight Class Library (PCL), © 2003-2026 Pleiades Astrophoto S.L.,
 used under the PixInsight Class Library License 2.0.
 
-Refine edge, the Refine Edge Brush, Color Range and the Magnetic Lasso are C++ ports of algorithms from
-[PhotoCraft](https://github.com/storytold/photocraft), used under its MIT license (© 2026 ArtCraft Team and the
-PhotoCraft contributors); the full notice is in Mask Lab's built-in documentation. The methods behind them: K. He,
-J. Sun and X. Tang, *Guided Image Filtering* (ECCV 2010); E. N. Mortensen and W. A. Barrett, *Intelligent Scissors for
-Image Composition* (SIGGRAPH 1995). The shape styles follow the mask types of the GAME script for PixInsight.
+Refine edge and the Refine Edge Brush use the guided filter (K. He, J. Sun and X. Tang, *Guided Image Filtering*,
+ECCV 2010); the Magnetic Lasso is a live-wire tracer (E. N. Mortensen and W. A. Barrett, *Intelligent Scissors for
+Image Composition*, SIGGRAPH 1995). The shape styles follow the mask types of the GAME script for PixInsight.

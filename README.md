@@ -9,11 +9,12 @@ updated through PixInsight's own update system from the signed FederAstro reposi
 | Tool | Type | Version | Platforms | Find it in PixInsight | Docs |
 |---|---|---|---|---|---|
 | **Palette Lab** | Module | 0.8.0 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Palette Lab | [docs](docs/PaletteLab.md) |
-| **Mask Lab** | Module | 0.1.3 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Mask Lab | [docs](docs/MaskLab.md) |
+| **Mask Lab** | Module | 0.1.4 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Mask Lab | [docs](docs/MaskLab.md) |
 | **Touch Stretch** | Module | 0.1.1 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Touch Stretch | [docs](docs/TouchStretch.md) |
 | **Finderscope** | Module | 0.6.5 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Finderscope | [docs](docs/Finderscope.md) |
+| **Tonight** | Module | 0.1.0 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Tonight | [docs](docs/Tonight.md) |
 | **Acquisition Card** | Script | 0.2.0 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Acquisition Card | [docs](docs/AcquisitionCard.md) |
-| **Tilt Doctor** | Script | 0.1.3 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Tilt Doctor | [docs](docs/TiltDoctor.md) |
+| **Tilt Doctor** | Script | 0.1.4 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Tilt Doctor | [docs](docs/TiltDoctor.md) |
 
 - **Palette Lab**: 20 built-in narrowband palettes side by side from your Hα, OIII and SII masters (or dual-band
   one-shot colour masters), plus palettes you design yourself; finishes the color and builds the one you like at full
@@ -23,6 +24,9 @@ updated through PixInsight's own update system from the signed FederAstro reposi
   it back, in a window of its own with a live full-resolution preview.
 - **Finderscope**: a dockable panel of icon tiles for every process and script you use, arranged on your own pages,
   plus saved process settings you can apply with one click.
+- **Tonight**: a quick look at your subs, live while you image or as a review of subs you already have: stacks per
+  filter with PixInsight's own StarAlignment and ImageIntegration, a palette preview, each sub's quality numbers and a
+  tilt check, and flags for the subs you want to leave out.
 - **Acquisition Card**: builds AstroBin's acquisition CSV and a session summary from the headers of your subs and
   calibration masters, and a card: a picture of the capture to post next to your image.
 - **Tilt Doctor**: finds sensor tilt from the size of the stars across your subs: where the sharpest spot sits, how
@@ -60,11 +64,9 @@ For a security problem, please don't open a public issue: see [SECURITY.md](SECU
 - **Acquisition Card** and **Tilt Doctor** are freeware: free for any use, including commercial imaging work. Unchanged
   copies may be shared free of charge, but they may not be sold, and changed copies may not be distributed (full text
   in each tool's doc).
-- **Mask Lab**, **Touch Stretch** and **Finderscope** are free to use. Palette Lab, Mask Lab,
-  Touch Stretch and Finderscope are based on software
-  from the PixInsight project, developed by Pleiades Astrophoto and its contributors (https://pixinsight.com/); Mask Lab
-  also contains code ported from [PhotoCraft](https://github.com/storytold/photocraft) under its MIT license (the
-  notice is in its documentation).
+- **Mask Lab**, **Touch Stretch**, **Finderscope** and **Tonight** are free to use. Palette Lab, Mask Lab,
+  Touch Stretch, Finderscope and Tonight are based on software
+  from the PixInsight project, developed by Pleiades Astrophoto and its contributors (https://pixinsight.com/).
 
 ## Credits
 
