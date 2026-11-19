@@ -1,17 +1,17 @@
 # Palette Lab
 
 A narrowband palette explorer for PixInsight.
-Version 0.8.0 · Process ▸ FederAstro ▸ Palette Lab · Windows (64-bit) and macOS (Apple silicon) · Free,
+Version 0.8.1 · Process ▸ FederAstro ▸ Palette Lab · Windows (64-bit) and macOS (Apple silicon) · Free,
 [CC BY-NC 4.0](#license-and-credits)
 
 ## What it does
 
-Palette Lab takes your Hα, OIII and SII masters (any two or all three, or dual-band one-shot colour masters) and shows
+Palette Lab takes your Hα, OIII and SII masters (any two or all three, or dual-band one-shot color masters) and shows
 them rendered in many narrowband palettes side by side, so you can compare looks before committing to one. Pick a
 palette, fine-tune it, and build it at full resolution as a new image.
 
 Built-in palettes (20): HOO, HOS, HSO, HSS, OHH, OHS, OSH, OSS, SHH, SHO, SOH, SOO, Reef, Forge and Dune (line
-colours), Mesa (amber-gold rims and a silvery OIII core, adapted to each target), Foraxx, Dreamsplease, Magma (SHO) and
+colors), Mesa (amber-gold rims and a silvery OIII core, adapted to each target), Foraxx, Dreamsplease, Magma (SHO) and
 Magma (HOO), plus any custom palettes you make.
 
 ## Now a module (0.8.0)
@@ -30,7 +30,7 @@ Since 0.8.0 Palette Lab is a PixInsight module (process `PaletteLab`, category *
 
 ## Getting started
 
-1. On **SOURCE**, pick your Hα, OIII and SII masters (or one-shot colour masters, see below), or press
+1. On **SOURCE**, pick your Hα, OIII and SII masters (or one-shot color masters, see below), or press
    **AUTO-DETECT**. Tick *Is your data linear?* for linear masters.
 2. Press **GENERATE**. The sources are prepared once and every palette is rendered as a thumbnail.
 3. Click a tile to build that palette at full resolution: a new image, with the Palette Lab instance in its history.
@@ -51,9 +51,9 @@ Before rendering, Palette Lab checks the sources: the right kind of image in eac
 stretched images not mixed, and that the channels look registered (their stars are compared). Problems are named in the
 status line and the Process Console. Palette Lab doesn't register images: run StarAlignment first.
 
-## One-shot colour (OSC) data
+## One-shot color (OSC) data
 
-Dual-band masters from a colour camera go in the **ONE-SHOT COLOR** pickers on the Source tab, as debayered colour
+Dual-band masters from a color camera go in the **ONE-SHOT COLOR** pickers on the Source tab, as debayered color
 images:
 
 | Picker | For | Lines it gives |
@@ -103,8 +103,8 @@ RESOLUTION**. ← / → step through the palettes.
 
 ## Narrowband Blend
 
-OUTPUT tab, **NARROWBAND BLEND**. Pick a base colour image (for example an HOO palette) and a mono narrowband layer
-(for example SII; Palette Lab's prepared channels come first). The layer is coloured (48° gold at 0.90 by default;
+OUTPUT tab, **NARROWBAND BLEND**. Pick a base color image (for example an HOO palette) and a mono narrowband layer
+(for example SII; Palette Lab's prepared channels come first). The layer is colored (48° gold at 0.90 by default;
 GOLD, RED, TEAL and BLUE presets), its background is neutralized, and it is blended in with Screen, Lighten, Add, Soft
 light or Overlay at the chosen opacity. Black point, highlights and midtones can be set for both the overlay and the
 base. The live preview shows the RESULT, the OVERLAY alone (the sky should be black) or the BASE; **CREATE IMAGE**
@@ -167,9 +167,9 @@ To remove it, uninstall the module (**Process ▸ Modules ▸ Uninstall Modules*
 - **0.8.0**:
   - Palette Lab is now a native PixInsight module for Windows and macOS (Apple silicon); builds are PaletteLab process
     executions you can reuse; the window opens wide, fitted to your screen; NB Blend is now **Narrowband Blend**.
-  - Generate checks the sources first: different sizes, an un-debayered (CFA) image or a colour image in a line picker
+  - Generate checks the sources first: different sizes, an un-debayered (CFA) image or a color image in a line picker
     stop with a message; images that don't look registered, or linear and stretched images mixed, give a warning.
-  - The line pickers list mono images only and the OSC pickers colour images only; auto-detect also finds dual-band
+  - The line pickers list mono images only and the OSC pickers color images only; auto-detect also finds dual-band
     OSC masters from the `FILTER` keyword and image or file names.
   - Hα as luminance starts at 0.30 (was 1.0); Mesa's gold rims are adjusted.
 - **0.7**: Evolve, Narrowband Blend, Darkroom and Paper themes, Reef, Forge, Dune and Mesa, build history, 4-up

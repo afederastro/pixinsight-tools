@@ -1,0 +1,29 @@
+# Line endings: LF everywhere (FederAstro rule since 2026-11-18). Git stores and checks out LF on every machine.
+* text=auto eol=lf
+# Windows batch files need CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.sln text eol=crlf
+# signatures and repository indexes stay byte for byte
+*.xsgn -text
+*.xri -text
+# binaries
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.xisf binary
+*.fits binary
+*.fit binary
+*.dll binary
+*.dylib binary
+*.so binary
+*.exe binary
+*.zip binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.mp4 binary

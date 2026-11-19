@@ -1,7 +1,7 @@
 # Acquisition Card
 
 AstroBin acquisition details from your headers.
-Version 0.2.0 · Script ▸ FederAstro ▸ Acquisition Card · Windows, macOS and Linux · Free
+Version 0.2.1 · Script ▸ FederAstro ▸ Acquisition Card · Windows, macOS and Linux · Free
 
 ## What it does
 
@@ -25,7 +25,7 @@ Acquisition Card reads the FITS and XISF headers of your light frames and calibr
 | **Site & nights** | Bortle and mean SQM are added to every row when given. *Local night* puts a sub taken after midnight on the evening the night began (from the site longitude in the headers); *UTC date* uses `DATE-OBS` as it is. Sensor temperature is the measured `CCD-TEMP` or the cooler set point. |
 | **Sessions** | Untick a row to leave it out. Calibration is matched to each session by exposure (darks), filter (flats) and the nearest date. A dark that matches only your flats' exposure is treated as a flat-dark. *Measure FWHM* runs SubframeSelector on a sample of each session's subs (3, 5, 10 or all, spread across the night) and reports the mean in arcseconds; frames with too few stars are left out. |
 | **Output** | *Copy* puts the text on the clipboard; paste it into AstroBin (edit the image's acquisition details, then import CSV) or into your description. *Save* writes it to a file you choose. |
-| **Card** | *Card…* opens the card in a window of its own. Type a title (it starts as the `OBJECT` in your headers) and a few words of your own, pick your finished (stretched) picture from the open images, choose what to show (FWHM, nights, equipment, calibration) and a background. *Sky chart* centres the real constellation figures on your target, from the `RA`/`DEC` (or `OBJCTRA`/`OBJCTDEC`) in the headers, with the target behind your picture. The card counts the ticked sessions; to show only the subs in your final image, add your master lights with *+ Files* instead of the folder. *Edit equipment* lets you change the equipment lines (one *Label: value* per line), for example to name your telescope when the header holds the mount, or to add your filters; your lines are kept for your next cards until you click *From headers*. *Save PNG* writes the card (2000 pixels wide) to a file you choose; *Open in PixInsight* opens it as a new image. |
+| **Card** | *Card…* opens the card in a window of its own. Type a title (it starts as the `OBJECT` in your headers) and a few words of your own, pick your finished (stretched) picture from the open images, choose what to show (FWHM, nights, equipment, calibration) and a background. *Sky chart* centers the real constellation figures on your target, from the `RA`/`DEC` (or `OBJCTRA`/`OBJCTDEC`) in the headers, with the target behind your picture. The card counts the ticked sessions; to show only the subs in your final image, add your master lights with *+ Files* instead of the folder. *Edit equipment* lets you change the equipment lines (one *Label: value* per line), for example to name your telescope when the header holds the mount, or to add your filters; your lines are kept for your next cards until you click *From headers*. *Save PNG* writes the card (2000 pixels wide) to a file you choose; *Open in PixInsight* opens it as a new image. |
 
 > PixInsight scripts have no clipboard function of their own, so *Copy* hands the text to your system's clipboard tool
 > (see below). If that tool is missing, the text is selected instead and Ctrl+C copies it.

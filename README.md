@@ -8,16 +8,16 @@ updated through PixInsight's own update system from the signed FederAstro reposi
 
 | Tool | Type | Version | Platforms | Find it in PixInsight | Docs |
 |---|---|---|---|---|---|
-| **Palette Lab** | Module | 0.8.0 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Palette Lab | [docs](docs/PaletteLab.md) |
-| **Mask Lab** | Module | 0.1.4 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Mask Lab | [docs](docs/MaskLab.md) |
-| **Touch Stretch** | Module | 0.1.1 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Touch Stretch | [docs](docs/TouchStretch.md) |
-| **Finderscope** | Module | 0.6.5 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Finderscope | [docs](docs/Finderscope.md) |
-| **Tonight** | Module | 0.1.0 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Tonight | [docs](docs/Tonight.md) |
-| **Acquisition Card** | Script | 0.2.0 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Acquisition Card | [docs](docs/AcquisitionCard.md) |
-| **Tilt Doctor** | Script | 0.1.4 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Tilt Doctor | [docs](docs/TiltDoctor.md) |
+| **Palette Lab** | Module | 0.8.1 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Palette Lab | [docs](docs/PaletteLab.md) |
+| **Mask Lab** | Module | 0.1.5 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Mask Lab | [docs](docs/MaskLab.md) |
+| **Touch Stretch** | Module | 0.1.2 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Touch Stretch | [docs](docs/TouchStretch.md) |
+| **Finderscope** | Module | 0.6.6 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Finderscope | [docs](docs/Finderscope.md) |
+| **Tonight** | Module | 0.1.1 | Windows (64-bit), macOS (Apple silicon) | Process ▸ FederAstro ▸ Tonight | [docs](docs/Tonight.md) |
+| **Acquisition Card** | Script | 0.2.1 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Acquisition Card | [docs](docs/AcquisitionCard.md) |
+| **Tilt Doctor** | Script | 0.1.5 | Windows, macOS, Linux | Script ▸ FederAstro ▸ Tilt Doctor | [docs](docs/TiltDoctor.md) |
 
 - **Palette Lab**: 20 built-in narrowband palettes side by side from your Hα, OIII and SII masters (or dual-band
-  one-shot colour masters), plus palettes you design yourself; finishes the color and builds the one you like at full
+  one-shot color masters), plus palettes you design yourself; finishes the color and builds the one you like at full
   resolution. A module since 0.8.0 (it was a script before; updating replaces it, see its [docs](docs/PaletteLab.md#now-a-module-080)).
 - **Mask Lab**: paint, select and refine masks at full resolution in a window of their own, then apply them to your image.
 - **Touch Stretch**: stretch an image by touching it: click a brightness and drag up to bring it out or down to hold

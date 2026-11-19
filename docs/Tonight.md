@@ -1,7 +1,7 @@
 # Tonight
 
 A quick look at your subs: live while you image, or as an after-action review of subs you already have.
-Version 0.1.0 · Process ▸ FederAstro ▸ Tonight · Windows (64-bit) and macOS (Apple silicon) · Free
+Version 0.1.1 · Process ▸ FederAstro ▸ Tonight · Windows (64-bit) and macOS (Apple silicon) · Free
 
 ![Tonight during a live night](https://federastro.com/images/Tonight-live.webp)
 
@@ -95,7 +95,7 @@ Tonight waits a little for a clearer one); a filter shows its newest sub alone u
 |---|---|
 | Header | The mode light (Not started, Live, Started, Waiting, After-action review), alerts, and **Start page**. |
 | Preview | **Stack** \| **Subs**, the palette or filter shown, the size, zoom, Stretch, Less green and the view's turn; in the Subs view the filter tabs, the Flagged tab and the step row. |
-| The night | One mark per sub on a time line, in its filter's colour: outlined = flagged, red = left out. Click a mark to review that sub. |
+| The night | One mark per sub on a time line, in its filter's color: outlined = flagged, red = left out. Click a mark to review that sub. |
 | Filters | One card per stack: a thumbnail, subs × exposure, hours, and what another hour would add. |
 | Tilt | The newest sub's tilt (HFD, FWHM or Corner HFD), and every sub's corner spread. **Expand** opens the tilt details. |
 | Last sub \| Flagged | The newest sub's stars, star size and background against the night's usual values; or the list of flagged subs with **Mark the files...**. |
@@ -104,7 +104,7 @@ Tonight waits a little for a clearer one); a filter shows its newest sub alone u
 
 ## The preview
 
-- The palette menu lists RGB and LRGB (for broadband data), then Palette Lab's palettes: its favourites, its 20
+- The palette menu lists RGB and LRGB (for broadband data), then Palette Lab's palettes: its favorites, its 20
   built-in palettes and your custom ones. **Hα**, **OIII** and **SII** show one stack. A palette waits until the
   filters it needs have stacks; the badge says what is missing.
 - **Soft** / **Normal** / **Strong** set the automatic stretch; **Less green** pulls green toward red and blue in a
@@ -120,7 +120,7 @@ a quick look. Palette Lab itself is not needed, and is not changed.
 ## Filters and cameras
 
 - The filter comes from the `FILTER` keyword, else from the file name: Hα, OIII, SII, L, R, G, B.
-- **Colour cameras**: a raw colour sub (with `BAYERPAT`) is split into colour by 2×2 cells (red, the average of the two
+- **Color cameras**: a raw color sub (with `BAYERPAT`) is split into color by 2×2 cells (red, the average of the two
   greens, blue), so its full size is half the sensor's. Without a narrowband filter it feeds R, G and B stacks.
 - **Duo-band filters** (for example L-eXtreme, L-Ultimate, L-eNhance, ALP-T, NBZ, Askar C1/C2, SV220): Hα (or SII) is
   taken from red and OIII from the average of green and blue, so the narrowband palettes work. SII+OIII filters give
@@ -142,7 +142,7 @@ its stack, when a sub has less than half the usual stars (*Clouds?*), or when th
 
 ![Tonight's tilt details](https://federastro.com/images/Tonight-tilt.webp)
 
-Every sub is measured as it is read, before it is reduced (a raw colour sub is measured at half size for HFD and
+Every sub is measured as it is read, before it is reduced (a raw color sub is measured at half size for HFD and
 FWHM), with three methods, as in Tilt Doctor: **HFD** (half-flux diameter), **FWHM** (from a Moffat fit of each star)
 and **Corner HFD** (its own detection of the stars with a signal-to-noise ratio above 30, their half-flux diameter and
 the median of each ninth of the frame; the tilt is the corner spread relative to the median of all stars, and the
@@ -261,10 +261,10 @@ Space work in the Subs view; in the Stack view an arrow key opens the Subs view.
 | Your subs | **Read** from the folder or files you choose. They are changed only when flagged subs are marked, in the ways you chose (by default as you flag: renamed, with a `FLAGGED` keyword; optionally moved into a `Flagged` folder next to the subs, which Tonight creates and leaves in place), and put back when you clear the flags. |
 | The flag list | `Tonight-flags-<date and time>.csv` in the subs folder (a review: the folder of the first chosen sub, or the one above it if that is a `Flagged` folder), only if you tick *Add to the night's list*. Tonight writes it again at each marking and never deletes it. |
 | While a header is written | `<name>.tonight-new<ext>` and `<name>.tonight-old<ext>` next to the sub for a moment (see above). Start the night and choosing review subs look for such files left by an interrupted marking in those folders (and their `Flagged` folders): with the original gone, the `.tonight-old` copy is renamed back (and an unfinished copy deleted); with the original there, an unfinished copy is deleted and an old copy is kept and reported. |
-| The work folder | `<system temporary folder>/Tonight/<subs folder name, or "review">-<yyyymmdd-hhmmss>` (with `-2`, `-3`, ... if that name is taken): the night's reference sub and a registered copy of every sub (one per channel for a colour sub), 32-bit, about 6.5 MB per sub at 1/4 size for a 26-megapixel camera. Its path and size are shown on the window. **End the night** or **End the review**, closing Tonight's window during one, starting a new review or a live night over it on the start page, and changing the subs folder during a night delete Tonight's files there and the folder, after asking. Quitting PixInsight while a night or review is open removes it too. If PixInsight stops without quitting normally, the folder stays: delete it yourself (the `Tonight` folder in your system's temporary folder). |
+| The work folder | `<system temporary folder>/Tonight/<subs folder name, or "review">-<yyyymmdd-hhmmss>` (with `-2`, `-3`, ... if that name is taken): the night's reference sub and a registered copy of every sub (one per channel for a color sub), 32-bit, about 6.5 MB per sub at 1/4 size for a 26-megapixel camera. Its path and size are shown on the window. **End the night** or **End the review**, closing Tonight's window during one, starting a new review or a live night over it on the start page, and changing the subs folder during a night delete Tonight's files there and the folder, after asking. Quitting PixInsight while a night or review is open removes it too. If PixInsight stops without quitting normally, the folder stays: delete it yourself (the `Tonight` folder in your system's temporary folder). |
 | Saved stacks | `Tonight_<filter>.xisf` in the folder you choose, when you press Save stacks. |
 | Settings | PixInsight's settings, through the standard PCL settings interface (module `Tonight`): the subs folder, the automatic check (on or off, interval), the stacking size, the palette and view (Palette, Hα, OIII, SII, stretch, Less green, view turn), the tilt method and tilt-details view, Leave flagged subs out, the marking ways and when, and the review choices (Inspect tilt, the last review folder). |
-| Palette Lab's settings | **Read only**, for its favourites and custom palettes. |
+| Palette Lab's settings | **Read only**, for its favorites and custom palettes. |
 
 - **Processes:** Tonight runs PixInsight's own StarAlignment (registration) and ImageIntegration (stacking, its cache
   off) on the copies in its work folder, and PixInsight's PixelMath for some palette previews. It waits while another

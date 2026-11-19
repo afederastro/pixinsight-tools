@@ -1,7 +1,7 @@
 # Touch Stretch
 
 Stretch an image by touching it: click a brightness and drag.
-Version 0.1.1 · Process ▸ FederAstro ▸ Touch Stretch · Windows (64-bit) and macOS (Apple silicon) · Free
+Version 0.1.2 · Process ▸ FederAstro ▸ Touch Stretch · Windows (64-bit) and macOS (Apple silicon) · Free
 
 ![Touch Stretch's split view](https://federastro.com/images/TouchStretch1.webp)
 
@@ -33,7 +33,7 @@ changes together, wherever it is.
   clicked brightness, left spreads it out.
 - **Grab a stage's square** on the image to change it again.
 
-A stage is centred on a brightness of the *original* image, so it stays anchored when you change the stages before it.
+A stage is centered on a brightness of the *original* image, so it stays anchored when you change the stages before it.
 
 ## Stages and fine-tuning
 
@@ -50,7 +50,7 @@ Arrow keys nudge the selected stage (Up / Down strength, Left / Right symmetry p
   Right-click a marker (or select it and press Delete) to remove it.
 - **Magic**: Soft, Medium or Deep make a first stretch from the image's statistics (a black point a few robust sigmas
   below the median, then a stretch that brings the median to a target). The options button sets the target, the black
-  point sigma, No black clip, and Linked / Unlinked for colour images.
+  point sigma, No black clip, and Linked / Unlinked for color images.
 
 ## The curve
 
@@ -59,9 +59,9 @@ image draws that brightness on the curve with what it becomes. Drag the selected
 **BP**, **WP**) handles along the histogram. **Log** / **Linear** axis, zoom with the wheel or − / +, pan by dragging an
 empty spot, **All** for the whole range, **Auto** (or a double-click) to fit the data.
 
-## Colour, masks and viewing
+## Color, masks and viewing
 
-- **Preserve colour** stretches the average of R, G and B and scales the channels alike (with a colour blend);
+- **Preserve color** stretches the average of R, G and B and scales the channels alike (with a color blend);
   **Per channel** stretches each channel with the same curve.
 - When the image has an active mask, the preview shows the result through it, as PixInsight will apply it. **Mask**
   tints the protected parts red.
@@ -74,7 +74,7 @@ empty spot, **All** for the whole range, **Auto** (or a double-click) to fit the
 ## Applying
 
 **Apply** runs the stages on the image as one `TouchStretch` step in its history (Ctrl+Z on the image undoes it),
-honouring the image's mask. Drag the triangle at the bottom left of the window to make a process icon of the stages.
+honoring the image's mask. Drag the triangle at the bottom left of the window to make a process icon of the stages.
 Closing the window with unapplied stages asks first.
 
 The process's parameters: a `stages` table (`type`, `channel`, `strength`, `focus`, `level`, `protectShadows`,
@@ -86,7 +86,7 @@ If Touch Stretch's window (or any process window) looks see-through, turn off Pi
 
 ## Files, network and programs
 
-- Settings (theme, colour settings, Magic options, the curve's Auto zoom) are kept in PixInsight's settings through
+- Settings (theme, color settings, Magic options, the curve's Auto zoom) are kept in PixInsight's settings through
   the standard PCL interface (module `TouchStretch`).
 - Touch Stretch writes no files. No network connections, no external programs, no scripts. Images change only when
   you apply.

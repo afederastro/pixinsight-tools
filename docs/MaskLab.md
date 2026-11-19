@@ -1,7 +1,7 @@
 # Mask Lab
 
 Paint, select and refine masks at full resolution, then apply them to your image.
-Version 0.1.4 · Process ▸ FederAstro ▸ Mask Lab · Windows (64-bit) and macOS (Apple silicon) · Free
+Version 0.1.5 · Process ▸ FederAstro ▸ Mask Lab · Windows (64-bit) and macOS (Apple silicon) · Free
 
 ![Mask Lab's window](https://federastro.com/images/MaskLab1.webp)
 
@@ -47,7 +47,7 @@ overlay on the image by default.
 Brush size: `[` and `]`, or right-drag up and down. Shift+click draws a straight stroke from the last one.
 
 Shapes, gradients and selections **Add** to or **Subtract** from the mask, painted in one of five styles (Solid,
-Feathered, Centre gradient, Luminance-protected, Brightness). **Lines** sets the color of outlines and the cursor.
+Feathered, Center gradient, Luminance-protected, Brightness). **Lines** sets the color of outlines and the cursor.
 
 ## Refine whole mask
 
